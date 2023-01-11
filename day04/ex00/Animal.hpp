@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 03:17:46 by absela            #+#    #+#             */
-/*   Updated: 2023/01/11 05:45:39 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/11 23:46:51 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ class Animal {
         ~Animal(void);
 
         Animal &		operator=(Animal const & rhs);
-        std::string getType();
+        std::string getType() const;
 
-        virtual void makesound();
+        virtual void makeSound() ;
 
     protected:
 

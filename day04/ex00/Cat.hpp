@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 03:22:28 by absela            #+#    #+#             */
-/*   Updated: 2023/01/11 05:46:13 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/11 23:46:54 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Cat: public Animal{
 
         Cat &		operator=(Cat const & rhs);
 
-        void makeSound(void) const;
+        void makeSound() ;
 };
 
 #endif

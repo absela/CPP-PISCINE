@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 05:39:32 by absela            #+#    #+#             */
-/*   Updated: 2023/01/11 05:45:21 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/11 23:47:14 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ Animal &		Animal::operator=(Animal const & rhs) {
     return *this;
 }
 
-std::string Animal::getType() {
+std::string Animal::getType() const {
     return this->type;
 }
 
-void Animal::makesound() {
+void Animal::makeSound()  {
     std::cout << "Animal sound" << std::endl;
 }
