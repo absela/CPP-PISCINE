@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/10 00:39:52 by absela            #+#    #+#             */
-/*   Updated: 2023/01/11 00:35:28 by absela           ###   ########.fr       */
+/*   Created: 2023/01/11 03:23:41 by absela            #+#    #+#             */
+/*   Updated: 2023/01/11 05:46:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#ifndef DOG_HPP
+# define DOG_HPP
 
-int main()
-{
-    ScavTrap scav("Anass");
-    scav.attack("me");
-    scav.guardGate();
-    return 0;
-}
+# include "Animal.hpp"
+
+class Dog: public Animal{
+
+    public:
+        Dog(void);
+        Dog(Dog const & src);
+        ~Dog(void);
+
+        Dog &		operator=(Dog const & rhs);
+
+        void makeSound(void) const;
+};
+
+#endif

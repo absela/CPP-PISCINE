@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 08:13:37 by absela            #+#    #+#             */
-/*   Updated: 2023/01/07 09:28:31 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/10 01:58:21 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,10 @@ ClapTrap::~ClapTrap(){
 ClapTrap & ClapTrap::operator=(ClapTrap const &objt)
 {
     std::cout << "assingnement operator called" << std::endl;
-    if (this != &objt)
-    {
-        this->_name = objt._name;
-        this->_hitPoints = objt._hitPoints;
-        this->_energyPoints = objt._energyPoints;
-        this->_attackDamage = objt._attackDamage;
-    }
+    _name = objt._name;
+    _hitPoints = objt._hitPoints;
+    _energyPoints = objt._energyPoints;
+    _attackDamage = objt._attackDamage;
     return *this;
 }
 

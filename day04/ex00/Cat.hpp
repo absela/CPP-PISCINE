@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/10 00:39:52 by absela            #+#    #+#             */
-/*   Updated: 2023/01/11 00:35:28 by absela           ###   ########.fr       */
+/*   Created: 2023/01/11 03:22:28 by absela            #+#    #+#             */
+/*   Updated: 2023/01/11 05:46:13 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#ifndef CAT_HPP
+# define CAT_HPP
 
-int main()
-{
-    ScavTrap scav("Anass");
-    scav.attack("me");
-    scav.guardGate();
-    return 0;
-}
+# include "Animal.hpp"
+
+class Cat: public Animal{
+
+    public:
+        Cat(void);
+        Cat(Cat const & src);
+        ~Cat(void);
+
+        Cat &		operator=(Cat const & rhs);
+
+        void makeSound(void) const;
+};
+
+#endif

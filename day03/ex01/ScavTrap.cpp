@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 00:34:59 by absela            #+#    #+#             */
-/*   Updated: 2023/01/10 00:39:46 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/10 04:59:01 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ ScavTrap::~ScavTrap()
 
 ScavTrap & ScavTrap::operator=(ScavTrap const &objt)
 {
-
     std::cout << "ScavTrap assingnement operator called" << std::endl;
     this->_name = objt._name;
     this->_hitPoints = objt._hitPoints;
