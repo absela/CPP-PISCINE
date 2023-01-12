@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 22:35:21 by absela            #+#    #+#             */
-/*   Updated: 2023/01/12 02:04:30 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/12 04:59:03 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,19 @@ Cat::Cat(void) {
 
 Cat::Cat(Cat const &src)
 {
-    std::cout << "Cat created" << std::endl;
+    std::cout << "Copy Cat created" << std::endl;
     this->type = src.type;
     this->brain = new Brain(*src.brain);
 }
 
 Cat::~Cat(void) {
     std::cout << "Cat destroyed" << std::endl;
+    delete brain;
 }
 
 Cat &		Cat::operator=(Cat const & rhs) {
+    if (&rhs == this)
+        return *this;
     this->type = rhs.type;
     if (this->brain)
         delete this->brain;
