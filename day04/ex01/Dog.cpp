@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 22:37:33 by absela            #+#    #+#             */
-/*   Updated: 2023/01/12 04:50:09 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/12 05:09:53 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,4 @@ Dog &		Dog::operator=(Dog const & rhs)
 void Dog::makeSound(void) {
     std::cout << "Woof" << std::endl;
 }
+

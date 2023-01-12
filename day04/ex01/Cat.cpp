@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 22:35:21 by absela            #+#    #+#             */
-/*   Updated: 2023/01/12 04:59:03 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/12 05:10:50 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Cat::~Cat(void) {
 }
 
 Cat &		Cat::operator=(Cat const & rhs) {
-    if (&rhs == this)
+     if (&rhs == this)
         return *this;
     this->type = rhs.type;
     if (this->brain)
