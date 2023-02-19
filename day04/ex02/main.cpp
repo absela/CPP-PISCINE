@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 23:52:41 by absela            #+#    #+#             */
-/*   Updated: 2023/01/12 04:28:30 by absela           ###   ########.fr       */
+/*   Updated: 2023/01/17 19:01:43 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int main()
     int size = 10;
     int i = 0;
     Animal *animal[size];
+    Dog a;
+    a.operator=(a);
     
     while (i < (size / 2))
     {
@@ -43,7 +45,7 @@ int main()
         delete animal[i];
         i++;
     }
-    // system ("leaks Brain");
+    system ("leaks Brain");
     return 0;
 }
 

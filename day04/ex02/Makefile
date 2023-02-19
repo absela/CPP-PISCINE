@@ -6,7 +6,7 @@
 #    By: absela <absela@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/12 02:49:51 by absela            #+#    #+#              #
-#    Updated: 2023/01/12 04:45:18 by absela           ###   ########.fr        #
+#    Updated: 2023/01/17 19:02:39 by absela           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ HDR = Animal.hpp Cat.hpp Dog.hpp Brain.hpp
 
 CXX = c++
 
-FLAGS = -Wall -Werror -Wextra -std=c++98
+FLAGS = -Wall -Werror -Wextra -std=c++98 
 
 obj = $(src:.cpp=.o)
 

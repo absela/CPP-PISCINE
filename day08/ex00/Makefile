@@ -4,11 +4,11 @@ RESET		=	\e[0m
 _SUCCESS	=	$(GREEN)SUCCESS$(RESET)
 REMOV		=	$(RED)REMOVED$(RESET)
 
-NAME = Bureaucrat
+NAME = easyfind
 
-src = Bureaucrat.cpp main.cpp 
+src =  	main.cpp 
 
-HDR = Bureaucrat.hpp
+HDR = easyfind.hpp
 
 CXX = c++
 

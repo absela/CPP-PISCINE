@@ -4,11 +4,11 @@ RESET		=	\e[0m
 _SUCCESS	=	$(GREEN)SUCCESS$(RESET)
 REMOV		=	$(RED)REMOVED$(RESET)
 
-NAME = Bureaucrat
+NAME = Base
 
-src = Bureaucrat.cpp main.cpp 
+src =  	base.cpp main.cpp
 
-HDR = Bureaucrat.hpp
+HDR = base.hpp
 
 CXX = c++
 
