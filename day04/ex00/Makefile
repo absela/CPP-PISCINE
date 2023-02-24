@@ -28,12 +28,12 @@ FLAGS = -Wall -Werror -Wextra -std=c++98
 
 obj = $(src:.cpp=.o)
 
-%.o : %.cpp 
+%.o : %.cpp ${HDR}
 	@${CXX} ${FLAGS} -c $< -o $@
 
 all : $(NAME)
 
-$(NAME) : $(obj)
+$(NAME) : $(obj) 
 	@${CXX} ${FLAGS} $(obj) -o $(NAME)
 	@printf "$(_SUCCESS) $(NAME) is ready!.\n"
 
