@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
         result += line[i];
       i++;
     }
-    out_file << result << endl;
+    out_file << result;
   }
   infile.close();
   out_file.close();
