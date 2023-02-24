@@ -21,11 +21,11 @@ class Dog: public Animal{
     public:
         Dog(void);
         Dog(Dog const & src);
-        ~Dog(void);
+        virtual ~Dog(void);
         
         Dog &		operator=(Dog const & rhs);
 
-        void makeSound() ;
+        virtual void makeSound() ;
     private :
         Brain* brain;
 };
